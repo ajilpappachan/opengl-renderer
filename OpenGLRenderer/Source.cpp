@@ -102,6 +102,8 @@ int main()
     glm::vec3 tvPosition(0.0f, 0.0f, 0.0f);
     Model flower("models/flower/Flower.obj");
     glm::vec3 flowerPosition(0.0f, 0.0f, 0.0f);
+    Model cat("models/cat/Cat.obj");
+    glm::vec3 catPosition(0.0f, 0.0f, 0.0f);
 
 
     // draw in wireframe
@@ -148,6 +150,7 @@ int main()
             ImGui::SliderFloat3("Desk", &deskPosition.x, -10, 10);
             ImGui::SliderFloat3("TV", &tvPosition.x, -10, 10);
             ImGui::SliderFloat3("Flower", &flowerPosition.x, -10, 10);
+            ImGui::SliderFloat3("Cat", &catPosition.x, -10, 10);
             
             ImGui::Text("Frame Rate: %.3f ms/frame (%.1f FPS)", 1000.0f / ImGui::GetIO().Framerate, ImGui::GetIO().Framerate);
             ImGui::End();
@@ -206,6 +209,12 @@ int main()
         model = glm::scale(model, glm::vec3(1.0f, 1.0f, 1.0f));	// it's a bit too big for our scene, so scale it down
         shader.setMat4("model", model);
         flower.Draw(shader);
+
+        model = glm::mat4(1.0f);
+        model = glm::translate(model, catPosition); // translate it down so it's at the center of the scene
+        model = glm::scale(model, glm::vec3(1.0f, 1.0f, 1.0f));	// it's a bit too big for our scene, so scale it down
+        shader.setMat4("model", model);
+        cat.Draw(shader);
 
         ImGui::Render();
         ImGui_ImplOpenGL3_RenderDrawData(ImGui::GetDrawData());

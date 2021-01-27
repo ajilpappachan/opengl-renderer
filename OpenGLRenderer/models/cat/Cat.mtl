@@ -1,0 +1,119 @@
+# Blender MTL File: 'OpenGLRenderer.blend'
+# Material Count: 9
+
+newmtl backleg
+Ns 99.999988
+Ka 1.000000 1.000000 1.000000
+Kd 1.000000 1.000000 1.000000
+Ks 1.000000 1.000000 1.000000
+Ke 0.000000 0.000000 0.000000
+Ni 1.450000
+d 1.000000
+illum 2
+map_Bump husa_backleg_nmap.jpg
+map_Kd husa_backleg_color.jpg
+map_Ks husa_backleg_rough.jpg
+
+newmtl beard
+Ns 99.999988
+Ka 1.000000 1.000000 1.000000
+Kd 1.000000 1.000000 1.000000
+Ks 1.000000 1.000000 1.000000
+Ke 0.000000 0.000000 0.000000
+Ni 1.450000
+d 1.000000
+illum 2
+map_Bump husa_beard_nmap.jpg
+map_Kd husa_beard_color.jpg
+map_Ks husa_beard_rough.jpg
+
+newmtl body
+Ns 99.999988
+Ka 1.000000 1.000000 1.000000
+Kd 1.000000 1.000000 1.000000
+Ks 1.000000 1.000000 1.000000
+Ke 0.000000 0.000000 0.000000
+Ni 1.450000
+d 1.000000
+illum 2
+map_Bump husa_body_nmap.jpg
+map_Kd husa_body_color.jpg
+map_Ks husa_body_rough.jpg
+
+newmtl ear
+Ns 99.999988
+Ka 1.000000 1.000000 1.000000
+Kd 1.000000 1.000000 1.000000
+Ks 1.000000 1.000000 1.000000
+Ke 0.000000 0.000000 0.000000
+Ni 1.450000
+d 1.000000
+illum 2
+map_Bump husa_ear_nmap.jpg
+map_Kd husa_ear_color.jpg
+map_Ks husa_ear_rough.jpg
+
+newmtl eye
+Ns 99.999988
+Ka 1.000000 1.000000 1.000000
+Kd 1.000000 1.000000 1.000000
+Ks 1.000000 1.000000 1.000000
+Ke 0.000000 0.000000 0.000000
+Ni 1.450000
+d 1.000000
+illum 2
+map_Bump husa_eye_nmap.jpg
+map_Kd husa_eye_color.jpg
+map_Ks husa_eye_rough.jpg
+
+newmtl frontleg
+Ns 99.999988
+Ka 1.000000 1.000000 1.000000
+Kd 1.000000 1.000000 1.000000
+Ks 1.000000 1.000000 1.000000
+Ke 0.000000 0.000000 0.000000
+Ni 1.450000
+d 1.000000
+illum 2
+map_Bump husa_frontleg_nmap.jpg
+map_Kd husa_frontleg_color.jpg
+map_Ks husa_frontleg_rough.jpg
+
+newmtl head
+Ns 99.999988
+Ka 1.000000 1.000000 1.000000
+Kd 1.000000 1.000000 1.000000
+Ks 1.000000 1.000000 1.000000
+Ke 0.000000 0.000000 0.000000
+Ni 1.450000
+d 1.000000
+illum 2
+map_Bump husa_default_nmap.jpg
+map_Kd husa_default_color.jpg
+map_Ks husa_default_rough.jpg
+
+newmtl nose
+Ns 99.999988
+Ka 1.000000 1.000000 1.000000
+Kd 1.000000 1.000000 1.000000
+Ks 1.000000 1.000000 1.000000
+Ke 0.000000 0.000000 0.000000
+Ni 1.450000
+d 1.000000
+illum 2
+map_Bump husa_nose_nmap.jpg
+map_Kd husa_nose_color.jpg
+map_Ks husa_nose_rough.jpg
+
+newmtl tail
+Ns 99.999988
+Ka 1.000000 1.000000 1.000000
+Kd 1.000000 1.000000 1.000000
+Ks 1.000000 1.000000 1.000000
+Ke 0.000000 0.000000 0.000000
+Ni 1.450000
+d 1.000000
+illum 2
+map_Bump husa_tail_nmap.jpg
+map_Kd husa_tail_color.jpg
+map_Ks husa_tail_rough.jpg
