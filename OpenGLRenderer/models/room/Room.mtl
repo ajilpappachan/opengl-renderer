@@ -1,0 +1,28 @@
+# Blender MTL File: 'OpenGLRenderer.blend'
+# Material Count: 2
+
+newmtl Floor
+Ns 225.000000
+Ka 1.000000 1.000000 1.000000
+Kd 0.800000 0.800000 0.800000
+Ks 0.500000 0.500000 0.500000
+Ke 0.000000 0.000000 0.000000
+Ni 1.450000
+d 1.000000
+illum 2
+map_Bump WoodFloor\\WoodFloor041_1K_Normal.jpg
+map_Kd WoodFloor\\WoodFloor041_1K_Color.jpg
+map_Ns WoodFloor\\WoodFloor041_1K_Roughness.jpg
+
+newmtl Wall
+Ns 225.000000
+Ka 1.000000 1.000000 1.000000
+Kd 0.800000 0.800000 0.800000
+Ks 0.500000 0.500000 0.500000
+Ke 0.000000 0.000000 0.000000
+Ni 1.450000
+d 1.000000
+illum 2
+map_Bump Plaster\\Plaster001_1K_Normal.jpg
+map_Kd Plaster\\Plaster001_1K_Color.jpg
+map_Ns Plaster\\Plaster001_1K_Roughness.jpg
