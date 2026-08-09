@@ -224,6 +224,11 @@ unsigned int TextureFromFile(const char* path, const string& directory, bool gam
             format = GL_RGBA;
 
         glBindTexture(GL_TEXTURE_2D, textureID);
+        // stb_image returns tightly packed rows, but OpenGL defaults to expecting
+        // each row padded to a 4-byte boundary. Any RGB image whose width is not a
+        // multiple of 4 then has every row read a few bytes off, which shears the
+        // image and rotates its colour channels.
+        glPixelStorei(GL_UNPACK_ALIGNMENT, 1);
         glTexImage2D(GL_TEXTURE_2D, 0, format, width, height, 0, format, GL_UNSIGNED_BYTE, data);
         glGenerateMipmap(GL_TEXTURE_2D);
 
