@@ -348,3 +348,7 @@ MigrationBackup/
 
 # Ionide (cross platform F# VS Code tools) working folder
 .ionide/
+
+# Vendored Assimp runtime DLL - not build output, despite the [Bb]in/ rule above
+!Res/bin/
+!Res/bin/*.dll
