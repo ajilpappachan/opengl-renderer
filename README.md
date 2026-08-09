@@ -19,7 +19,7 @@ C++, OpenGL 3, GLFW, GLEW, GLM, Assimp, Dear ImGui, stb_image
 
 ## Building
 
-Open `OpenGLRenderer.sln` in Visual Studio and build the **x64** configuration. Everything is
+Open `OpenGLRenderer.sln` in Visual Studio and build. Everything is
 vendored under `Res/` — headers in `Res/include`, libraries in `Res/lib`, and the Assimp runtime
 DLL in `Res/bin` — so there is nothing to fetch or configure.
 
@@ -27,7 +27,10 @@ GLEW and GLFW link statically. Assimp links through an import library, so a post
 `assimp-vc142-mt.dll` into the output directory automatically; the build runs straight from a fresh
 clone.
 
-The vendored Assimp is **5.0.1**, built with the VS2019 toolset (v142).
+**x64 only.** The vendored libraries are all 64-bit builds, so there is no 32-bit configuration to
+select. The project builds against whichever Visual Studio toolset you have installed.
+
+The vendored Assimp is **5.0.1**.
 
 ## Notes
 
