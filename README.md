@@ -15,11 +15,15 @@ A real-time 3D renderer written in C++ with OpenGL 3, built to work through the 
 
 ## Built with
 
-C++, OpenGL 3, GLFW, GLEW, Assimp, Dear ImGui, stb_image
+C++, OpenGL 3, GLFW, GLEW, GLM, Assimp, Dear ImGui, stb_image
 
 ## Building
 
-Open `OpenGLRenderer.sln` in Visual Studio and build. Dependencies are included in the repository.
+Open `OpenGLRenderer.sln` in Visual Studio and build. Headers and libraries are vendored under
+`Res/`, so there is nothing to fetch or configure — GLEW and GLFW link statically.
+
+Assimp links through an import library, so drop `assimp-vc142-mt.dll` next to the built
+executable before running.
 
 ## Notes
 
