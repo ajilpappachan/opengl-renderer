@@ -2,10 +2,15 @@
 out vec4 FragColor;
 
 struct Material {
-    sampler2D diffuse;
-    sampler2D specular;
     float shininess;
 };
+
+// Mesh::Draw binds the material maps under these names, numbered per type.
+// They must match the strings built in Mesh.h or glGetUniformLocation returns
+// -1, glUniform1i silently does nothing, and every sampler falls back to
+// texture unit 0.
+uniform sampler2D texture_diffuse1;
+uniform sampler2D texture_specular1;
 
 struct Light {
     vec3 position;
@@ -30,19 +35,19 @@ uniform Light light;
 void main()
 {
     // ambient
-    vec3 ambient = light.ambient * texture(material.diffuse, TexCoords).rgb;
+    vec3 ambient = light.ambient * texture(texture_diffuse1, TexCoords).rgb;
 
     // diffuse 
     vec3 norm = normalize(Normal);
     vec3 lightDir = normalize(light.position - FragPos);
     float diff = max(dot(norm, lightDir), 0.0);
-    vec3 diffuse = light.diffuse * diff * texture(material.diffuse, TexCoords).rgb;
+    vec3 diffuse = light.diffuse * diff * texture(texture_diffuse1, TexCoords).rgb;
 
     // specular
     vec3 viewDir = normalize(viewPos - FragPos);
     vec3 reflectDir = reflect(-lightDir, norm);
     float spec = pow(max(dot(viewDir, reflectDir), 0.0), material.shininess);
-    vec3 specular = light.specular * spec * texture(material.specular, TexCoords).rgb;
+    vec3 specular = light.specular * spec * texture(texture_specular1, TexCoords).rgb;
 
     // attenuation
     float distance = length(light.position - FragPos);
