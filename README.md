@@ -35,3 +35,9 @@ The vendored Assimp is **5.0.1**.
 ## Notes
 
 This is a personal learning project rather than a finished product. I wrote it to understand how renderers are put together before working on engines where most of that machinery is already in place.
+
+## License
+
+My source is MIT licensed — see [LICENSE](LICENSE). That covers the renderer itself, not the
+vendored dependencies under `Res/` (GLFW, GLEW, GLM, Assimp, Dear ImGui, stb_image) or the models
+and textures in `Res/models`, all of which keep their own licences.
